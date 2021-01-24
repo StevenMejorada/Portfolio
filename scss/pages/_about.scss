@@ -1,0 +1,30 @@
+.about {
+  grid-column: center-start / center-end;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__img {
+    width: 20vw;
+    justify-self: center;
+    grid-row: 1 / span 2;
+    filter: grayscale(40%);
+  }
+
+  &__text {
+  }
+
+  &__icons {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+  }
+}
