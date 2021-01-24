@@ -1,4 +1,43 @@
 .contact {
-  background-color: lightcoral;
   grid-column: center-start / center-end;
+  margin: 10rem 0 15rem;
+
+  &__content {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+
+  &__details {
+    justify-self: end;
+    text-align: right;
+  }
+
+  &__details-list {
+    list-style: none;
+  }
+
+  &__details-item {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__details-link:link,
+  &__details-link:visited {
+    text-decoration: none;
+    color: $color-primary;
+    transition: all 0.2s;
+  }
+
+  &__details-link:hover,
+  &__details-link:active {
+    color: $color-secondary;
+  }
+  &__form {
+  }
 }

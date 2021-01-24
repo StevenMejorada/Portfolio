@@ -43,13 +43,13 @@
             <p class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos cupiditate ea nam amet praesentium suscipit ex porro? Dolorem voluptatibus ad nemo deleniti non tempora! Mollitia, error alias. Id, minus aliquam in perspiciatis, quidem earum et vero ratione voluptatum odio rem natus fuga, repudiandae at dolorem debitis quos doloremque officia quo!</p>
             <div class="about__icons">
 
-                <span class="iconify about__icon" data-icon="logos:html-5" data-inline="false"></span>
+                <span title="HTML"class="iconify about__icon" data-icon="logos:html-5" data-inline="false"></span>
 
-                <span class="iconify about__icon" data-icon="logos:css-3" data-inline="false"></span>
+                <span title="CSS"class="iconify about__icon" data-icon="logos:css-3" data-inline="false"></span>
 
-                <span class="iconify about__icon" data-icon="logos:javascript" data-inline="false"></span>
+                <span title="Javascript"class="iconify about__icon" data-icon="logos:javascript" data-inline="false"></span>
 
-                <span class="iconify about__icon" data-icon="logos:sass" data-inline="false"></span>
+                <span title="Sass"class="iconify about__icon" data-icon="logos:sass" data-inline="false"></span>
             </div>
         </div>
     </section>
@@ -57,14 +57,34 @@
 
     <!--------------PORTFOLIO----------------->
 <section class="portfolio" id="portfolio">
-        portfolio
+        <h1 class="heading-1">portfolio</h1>
     </section>
 
     <!--------------CONTACT----------------->
     <section class="contact" id="contact">
-        contact
+        <h1 class="heading-1">contact</h1>
+        <div class="contact__content">
+            <div class="contact__details">
+               <ul class="contact__details-list">
+                   <li class="contact__details-item" ><span>email:</span> <a class="contact__details-link" href="mailto:steven.mejorada@gmail.com">steven.mejorada@gmail.com</a></li>
+                   <li class="contact__details-item"><span>linkedin:</span> <a class="contact__details-link" href="https://www.linkedin.com/in/steven-mejorada">www.linkedin.com/in/steven-mejorada</a>
+                </li>
+                   <li class="contact__details-item"><span>github:</span> <a class="contact__details-link" href="https://github.com/StevenMejorada">https://github.com/StevenMejorada</a></li>
+                   <li class="contact__details-item"><span>CV:</span> <a class="contact__details-link" href="#">www.stevenmejorada.cv</a> </li>
+               </ul>
+            </div>
+            <form action="" class="contact__form">
+                <input type="text" name="Name" id="name" placeholder="Name:">
+                <input type="email" name="Email" id="email" placeholder="Email:">
+                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message:"></textarea>
+            </form>
+        </div>
     </section>
 
+    <!---------------------FOOTER---------------->
+    <section class="footer">
+         <p>&copy; Steven Mejorada</p>
+    </section>
 
 <!----------------------ICONIFY SCRIPT------------>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>

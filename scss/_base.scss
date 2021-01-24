@@ -16,6 +16,11 @@ $font-secondary: "Fauna One", serif;
   margin: 0;
 }
 
+::selection {
+  background-color: $color-secondary;
+  color: #fff;
+}
+
 html {
   font-size: 62.5%; //10px / 16px = 62.5%, 1rem = 10px
   box-sizing: border-box;
@@ -38,6 +43,5 @@ body {
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: 100vh repeat(3, minmax(100vh, min-content));
-  grid-row-gap: 10rem;
+  grid-template-rows: 100vh;
 }

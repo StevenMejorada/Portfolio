@@ -5,6 +5,10 @@
   padding: 0;
   margin: 0; }
 
+::selection {
+  background-color: #f7df1e;
+  color: #fff; }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -20,8 +24,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: 100vh repeat(3, minmax(100vh, min-content));
-  grid-row-gap: 10rem; }
+  grid-template-rows: 100vh; }
 
 .heading-1 {
   font-size: 18rem;
@@ -36,7 +39,8 @@ body {
   font-weight: 400; }
 
 .about {
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 10rem 0; }
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr; }
@@ -55,8 +59,39 @@ body {
     width: 5rem; }
 
 .contact {
-  background-color: lightcoral;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 10rem 0 15rem; }
+  .contact__content {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem; }
+  .contact__details {
+    justify-self: end;
+    text-align: right; }
+  .contact__details-list {
+    list-style: none; }
+  .contact__details-item {
+    margin-bottom: 2rem;
+    font-size: 2.4rem; }
+    .contact__details-item span {
+      font-weight: bold; }
+  .contact__details-link:link, .contact__details-link:visited {
+    text-decoration: none;
+    color: #1b1b1b;
+    transition: all 0.2s; }
+  .contact__details-link:hover, .contact__details-link:active {
+    color: #f7df1e; }
+
+.footer {
+  grid-column: 1/-1;
+  text-align: center;
+  background-color: #1b1b1b;
+  color: #fff;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .home {
   grid-column: center-start / center-end;
@@ -82,4 +117,5 @@ body {
 
 .portfolio {
   background-color: lightskyblue;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 10rem 0; }
