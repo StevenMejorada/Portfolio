@@ -26,6 +26,24 @@ body {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: 100vh; }
 
+.btn {
+  background-color: #f7df1e;
+  color: #1b1b1b;
+  padding: 1.5rem 2.5rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 2rem;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  transition: all 0.2s;
+  cursor: pointer; }
+  .btn:hover {
+    transform: translateY(-3px); }
+  .btn:active, .btn:focus {
+    outline: none;
+    transform: translateY(-1px); }
+
 .heading-1 {
   font-size: 18rem;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -60,12 +78,12 @@ body {
 
 .contact {
   grid-column: center-start / center-end;
-  margin: 10rem 0 15rem; }
+  margin: 10rem 0; }
   .contact__content {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem; }
+    grid-gap: 6rem; }
   .contact__details {
     justify-self: end;
     text-align: right; }
@@ -73,7 +91,7 @@ body {
     list-style: none; }
   .contact__details-item {
     margin-bottom: 2rem;
-    font-size: 2.4rem; }
+    font-size: 2.3rem; }
     .contact__details-item span {
       font-weight: bold; }
   .contact__details-link:link, .contact__details-link:visited {
@@ -82,6 +100,27 @@ body {
     transition: all 0.2s; }
   .contact__details-link:hover, .contact__details-link:active {
     color: #f7df1e; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .contact__form-input, .contact__form-textarea {
+      width: 80%;
+      font-family: inherit;
+      font-size: 2rem;
+      color: inherit;
+      padding: 1.5rem 2rem;
+      margin: 1rem 0;
+      border-radius: 2px;
+      border: 5px solid #1b1b1b; }
+    .contact__form-input:focus {
+      outline: none;
+      border-bottom: 5px solid #f7df1e; }
+    .contact__form-input:focus:invalid {
+      border-bottom: 5px solid #ee2a2a; }
+    .contact__form-textarea {
+      height: 20rem; }
 
 .footer {
   grid-column: 1/-1;
@@ -116,6 +155,5 @@ body {
     color: #f9e64f; }
 
 .portfolio {
-  background-color: lightskyblue;
   grid-column: center-start / center-end;
   margin: 10rem 0; }
